@@ -14,7 +14,7 @@ pre[class*="language-"] {
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
-	border-radius: 10px;
+	position: relative;
 	
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -24,6 +24,32 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
+
+}
+
+code.language-css:before {
+	content: "CSS";
+	position: absolute;
+	font-size: 1em;
+	left: -20px;
+	top: 0;
+}
+
+code.language-markup:before {
+	content: "HTML";
+	position: absolute;
+	font-size: 1em;
+	left: -20px;
+	top: 0;
+}
+
+code.language-javascript:before {
+	content: "Javascript";
+	position: absolute;
+	font-size: 1em;
+	left: -20px;
+	top: 0;
 }
 
 @media print {

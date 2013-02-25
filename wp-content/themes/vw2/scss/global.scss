@@ -48,7 +48,7 @@ body {
 	@include breakpoint(baby-bear) {width: 98%}
 }
 
-.logo h1 {
+.logo h1, .header-h2 {
 	font-size: 4em;
 	font-family: Trebuchet MS, Helvetica, Arial;
 	margin: 12px auto;
@@ -89,7 +89,7 @@ nav {
 	display: block;
 	text-align: center;
 	padding-bottom: 12px;
-	border-bottom: 1px solid rgba(74,74,74,$opacity/2);
+	border-bottom: 1px solid rgba(74,74,74,$opacity/5);
 	a {
 	  opacity: $opacity;
 	  -webkit-transition: opacity .3s ease-in-out;
@@ -102,7 +102,7 @@ nav {
 	  }
 	}
 	@include breakpoint(baby-bear) {
-
+		font-size: .7em;
 	}
 }
 

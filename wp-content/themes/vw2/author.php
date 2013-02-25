@@ -1,4 +1,4 @@
-<?php Starkers_Utilities::get_template_parts( array( 'parts/doctype', 'parts/header', 'parts/nav' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/doctype', 'parts/header-else', 'parts/nav' ) ); ?>
 
 
 <?php if ( have_posts() ): the_post(); ?>

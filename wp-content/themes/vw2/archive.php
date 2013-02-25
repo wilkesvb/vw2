@@ -4,14 +4,14 @@ Template Name: Archive
 */
 ?>
 
-<?php Starkers_Utilities::get_template_parts( array( 'parts/doctype', 'parts/header', 'parts/nav' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/doctype', 'parts/header-else', 'parts/nav' ) ); ?>
 
 
 <?php if ( have_posts() ): ?>
 
 <?php wp_get_archives('type=monthly'); ?>
 
-<ol>
+<ul>
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
 		<article>
@@ -21,7 +21,7 @@ Template Name: Archive
 		</article>
 	</li>
 <?php endwhile; ?>
-</ol>
+</ul>
 <?php else: ?>
 <h2>No posts to display</h2>	
 <?php endif; ?>
