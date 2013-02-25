@@ -1,0 +1,264 @@
+//typography
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+@charset "UTF-8";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, p {
+  color: $darkGray;
+  font-weight: 100;
+
+}
+
+article {
+  border-bottom: 1px solid rgba(74,74,74,$opacity/2);
+  padding: 15px 30px;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -ms-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  &:hover {
+    background: rgba(74,74,74,$opacity/6);
+
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family:  Georgia, Times New Roman, Serif;
+  }
+
+  p {
+    font-family: Lucida Grande;
+  }
+
+  h1, h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  time {
+    font-family: Trebuchet MS, Helvetica, Arial;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  p {
+    font-size: 1em;
+    margin-top: 30px;
+    line-height: 1.8em;
+  }
+  transition:all .2s linear; 
+  -o-transition:all .2s linear; 
+  -moz-transition:all .2s linear; 
+  -webkit-transition:all .2s linear;
+  @include breakpoint(mama-bear) {
+    h1, h2 {
+      font-size: 2em;
+    }
+  }
+  @include breakpoint(baby-bear) {
+    padding: 20px 15px 5px;
+    h1, h2 {
+      font-size: 1.6em;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    p { 
+      margin-top: 15px;
+    }
+  }
+}
+
+.gold {color: $goldy;}
+
+.half-opacity {opacity: $opacity;}
+
+/* icon fonts for nav and social media buttons */
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../typography/fontello-f77fea0e/font/fontello.eot");
+  src: url("../typography/fontello-f77fea0e/typography/fontello-f77fea0e/font/fontello.eot?#iefix") format('embedded-opentype'), url("../typography/fontello-f77fea0e/font/fontello.woff") format('woff'), url("../typography/fontello-f77fea0e/font/fontello.ttf") format('truetype'), url("../typography/fontello-f77fea0e/font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  content: "";
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.5em;
+  color: $darkGray;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  transition: all .2s linear; 
+  -o-transition: all .2s linear; 
+  -moz-transition: all .2s linear; 
+  -webkit-transition: all .2s linear;
+  @include breakpoint(baby-bear) {
+    font-size: 4em;
+
+  }
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+  margin-left: 0.2em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-home:before { content: '\2302'; } /* '⌂' */
+.icon-archive:before { content: '\e738'; } /* '' */
+.icon-facebook:before { content: '\f300'; } /* '' */
+.icon-twitter-bird-1:before { content: '\e800'; } /* '' */
+.icon-twitter-bird:before { 
+  content: '\f303';
+  } /* '' */
+.icon-linkedin-1:before { content: '\f31a'; } /* '' */
+.icon-user:before { content: '👤'; } /* '\1f464' */

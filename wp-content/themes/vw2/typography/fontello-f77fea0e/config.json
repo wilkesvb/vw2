@@ -1,0 +1,86 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "home"
+      ],
+      "code": 8962,
+      "from": 8962,
+      "uid": "w3nzesrlbezu6f30q7ytyq919p6gdlb6",
+      "css": "home",
+      "orig_css": "home",
+      "orig_code": 8962,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "archive"
+      ],
+      "code": 59192,
+      "from": 59192,
+      "uid": "96ea1be71f597a5bdfc8f791ada4f651",
+      "css": "archive",
+      "orig_css": "archive",
+      "orig_code": 59192,
+      "src": "entypo"
+    },
+    {
+      "search": [
+        "facebook"
+      ],
+      "code": 62208,
+      "meta": {
+        "homepage": "http://www.facebook.com/brandpermissions/logos.php",
+        "author": "Facebook"
+      },
+      "uid": "240979dd9fcf2e46250e66792edb8092",
+      "file": "facebook",
+      "css": "facebook",
+      "orig_css": "facebook",
+      "orig_code": 62208,
+      "src": "brandico",
+      "from": 62208
+    },
+    {
+      "search": [
+        "twitter"
+      ],
+      "code": 62211,
+      "from": 62211,
+      "uid": "a4765de460cc6485b1ca5b36222f41d5",
+      "css": "twitter-bird",
+      "orig_css": "twitter-bird",
+      "orig_code": 62211,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "linkedin",
+        "social",
+        "logo"
+      ],
+      "code": 62232,
+      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
+      "css": "linkedin",
+      "orig_css": "linkedin",
+      "orig_code": 62232,
+      "src": "entypo",
+      "from": 62232
+    },
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 128100,
+      "from": 128100,
+      "uid": "fd3128bf109153952b1b775ea574504b",
+      "css": "user",
+      "orig_css": "user",
+      "orig_code": 128100,
+      "src": "websymbols"
+    }
+  ]
+}

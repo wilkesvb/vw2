@@ -1,0 +1,29 @@
+.blog-post {
+  &:hover {
+  	background: none;
+  }
+  img {
+    height: auto !important;
+    width: 100%;
+    }
+    h1, h2 {
+      font-size: 3em;
+    }
+    @include breakpoint("baby-bear") {
+    	h1, h2 {
+    		font-size: 2.5em;
+    	}
+    }
+    ul, ol {
+    	margin: 0 0 20px;
+    }
+    ul, ol ul, ul ul {
+      list-style: disc;
+    }
+    ul ul, ol ol, ul ol, ol ul {
+      margin: 5px 0 0 22px;
+    }
+    li {
+      margin: 0 0 7px 0;
+    }
+}
