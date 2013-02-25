@@ -13,4 +13,4 @@
 
 <h2>Page not found</h2>
 
-<?php include("parts/footer-about.php"); ?>
+<?php include("parts/footer.php"); ?>

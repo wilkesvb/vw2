@@ -19,4 +19,4 @@
 
 
 
-<?php include("parts/footer-about.php"); ?>
+<?php include("parts/footer-blogpost.php"); ?>
