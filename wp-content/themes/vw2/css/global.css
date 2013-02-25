@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6, li, a, p {
 
 article {
   border-bottom: 1px solid rgba(74, 74, 74, 0.1);
-  padding: 15px 30px;
+  padding: 0.8em 1.8em;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
@@ -358,7 +358,7 @@ article {
     background: rgba(74, 74, 74, 0.08333); }
   article h1, article h2, article h3, article h4, article h5, article h6 {
     font-family: Georgia, Times New Roman, Serif; }
-  article p {
+  article p, article li {
     font-family: Lucida Grande, Helvetica, Arial;
     font-size: 1em;
     margin-top: 30px;
@@ -554,7 +554,7 @@ code.language-css:before {
   content: "CSS";
   position: absolute;
   font-size: 1em;
-  left: -20px;
+  left: -10px;
   top: 0; }
 
 code.language-markup:before {
@@ -579,7 +579,8 @@ code.language-javascript:before {
 pre[class*="language-"] {
   padding: .5em;
   margin: 0.5em 0;
-  overflow: auto; }
+  overflow: auto;
+  border: 1px solid rgba(74, 74, 74, 0.1); }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
@@ -638,6 +639,16 @@ pre[class*="language-"] {
 
 ::selection {
   background: #5888ea; }
+
+.archives {
+  padding-top: .4em;
+  padding-bottom: .4em; }
+  .archives h2 {
+    font-size: 1.5em;
+    margin-top: 0; }
+  @media (max-width: 450px) {
+    .archives {
+      font-size: .7em; } }
 
 body {
   background: url(../images/bg2x.png) repeat; }

@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6, li, a, p {
 
 article {
   border-bottom: 1px solid rgba(74,74,74,$opacity/5);
-  padding: 15px 30px;
+  padding: .8em 1.8em;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   -ms-transition: background .3s ease-in-out;
@@ -165,7 +165,7 @@ article {
     font-family:  Georgia, Times New Roman, Serif;
   }
 
-  p {
+  p, li {
     font-family: Lucida Grande, Helvetica, Arial;
     font-size: 1em;
     margin-top: 30px;

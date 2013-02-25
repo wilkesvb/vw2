@@ -1,0 +1,13 @@
+.archives {
+	padding-top: .4em;
+	padding-bottom: .4em;
+	h2 {
+	  font-size: 1.5em;
+	  margin-top: 0;
+	}
+
+	@include breakpoint(baby-bear) {
+		font-size: .7em;
+	}
+	
+}

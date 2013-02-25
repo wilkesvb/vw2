@@ -32,7 +32,7 @@ code.language-css:before {
 	content: "CSS";
 	position: absolute;
 	font-size: 1em;
-	left: -20px;
+	left: -10px;
 	top: 0;
 }
 
@@ -64,6 +64,7 @@ pre[class*="language-"] {
 	padding: .5em;
 	margin: .5em 0;
 	overflow: auto;	
+	border: 1px solid rgba(74,74,74,$opacity/5);
 }
 
 :not(pre) > code[class*="language-"],
