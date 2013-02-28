@@ -14,4 +14,7 @@
 
   <div class="bar"></div>
 
-  <div class="page-wrap"
+  <div class="page-wrap">
+
+  	<div class="main">
+
